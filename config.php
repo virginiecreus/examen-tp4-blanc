@@ -14,7 +14,6 @@ define('NOM_DB' , 'examen_blanc');
 define('UTILISATEUR_DB' , 'root');
 define('MDP_DB' , '311286');
 
-/*  = new PDO('mysql:host=localhost;dbname='.NOM_DB, UTILISATEUR_DB, MDP_DB, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8')); */
 
 $bdd = mysqli_connect("localhost", "root", "311286", "examen_blanc");
 ?>
