@@ -48,7 +48,7 @@
                         </div>
                     </div>
 
-                    <input  type="radio" name="role" value="membre">Membre
+                    <input  type="radio" name="role" value="admin">Admin
                     <div class="form-group">
                         <div class="col-sm-10 col-sm-offset-2">
                             <center><input id="ajouter" name="ajouter" type="submit" value="Ajouter" class="btn btn-success"></center>
@@ -56,8 +56,8 @@
                     </div>
 
                 </form>
-            </div>
         </div>
+    </div>
     </div>
 </section>
 </body>
