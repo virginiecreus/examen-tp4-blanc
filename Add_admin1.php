@@ -1,3 +1,14 @@
+
+
+<!--if($LOGGED){
+
+    echo $_SESSION['prenom'].' '.$_SESSION['nom'].' est connecté en tant que '.$_SESSION['role'].' .';
+}
+else {
+    echo " Vous n'avez pas les droits.";
+}
+?> -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +22,7 @@
 // si champs rempli envoyer dans la bdd
 if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['email']) && isset($_POST['mdp']) && isset($_POST['role'])) {
 
-
+// on récupére les champs du formulaire 
     $nom = $_POST['nom'];
     $prenom = $_POST['prenom'];
     $email = $_POST['email'];

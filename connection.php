@@ -1,27 +1,26 @@
 <?php
-include('config.php');
 session_start();
-$_SESSION['logged'] = false;
-$LOGGED = $_SESSION['logged'];
+include('config.php');
+
 
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <!-- BOOTSTRAP STYLE CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
 
 
 </head>
-<body class="couleur">
+<body>
 <?php include 'menu.php'; ?>
 
 <div class="container">
     <div class="row">
-        <h2 class="page-header text-center">Connectez-vous !</h2>
+        <h2 class="page-header text-center font">Connectez-vous !</h2>
         <div class="col-md-5 col-sm-6 col-xs-12">
         </div>
     </div>
@@ -34,20 +33,20 @@ $LOGGED = $_SESSION['logged'];
             <div class="col-md-8 col-md-offset-2">
                 <form class="form-horizontal" role="form" method="post" action="connection.php">
                     <div class="form-group">
-                        <label for="email" class="col-sm-2 control-label">Email</label>
+                        <label for="email" class="col-sm-2 control-label font">Email</label>
                         <div class="col-sm-10">
                             <input type="email" class="form-control" name="login" placeholder="exemple@domain.com" value="<?php //echo htmlspecialchars($_POST['email']); ?>">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="name" class="col-sm-2 control-label">Mot de passe</label>
+                        <label for="name" class="col-sm-2 control-label font">Mot de passe</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" name="pass" placeholder="Mot de passe" value="<?php //echo htmlspecialchars($_POST['nom']); ?>">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-10 col-sm-offset-2">
-                            <center><input id="connection" name="connection" type="submit" value="Connexion" class="btn "></center>
+                            <button class="bouton">Se connecter !</button>
                         </div>
                     </div>
                 </form>
@@ -79,7 +78,6 @@ if(isset($_POST) && !empty($_POST['login']) && !empty($_POST['pass'])) {
                 $_SESSION['nom'] = $row['nom'];
                 $_SESSION['role'] = $row['role'];
                 $_SESSION['logged'] = true;
-                $LOGGED = $_SESSION['logged'];
 
 
             }
@@ -90,7 +88,7 @@ if(isset($_POST) && !empty($_POST['login']) && !empty($_POST['pass'])) {
 
 }
 
-if($LOGGED){
+if($_SESSION['logged']){
 
     echo $_SESSION['prenom'].' '.$_SESSION['nom'].' est connecté en tant que '.$_SESSION['role'].' .';
 }
@@ -102,7 +100,7 @@ else {
 
 ?>
 
-<!--<a href="admin_users.php"><button class="bouton">Liste des utilisateurs</button></a>
-<a href="admin_langages.php"><button class="bouton">Liste des langages</button></a> -->
+
+<a href="logout.php"><button class="bouton">Se déconnecter !</button></a>
 </body>
 </html>

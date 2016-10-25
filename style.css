@@ -1,0 +1,14 @@
+body {
+    background-image: url("musique.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding:0;
+    margin:0;
+}
+
+.font {
+    color: black;
+}
+
+
