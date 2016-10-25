@@ -54,19 +54,19 @@ echo 'Une erreure s\'est produite';
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="micro.jpg" alt="Chania" width="460" height="345">
+                <img src="img/micro.jpg" alt="Chania" width="460" height="345">
             </div>
 
             <div class="item">
-                <img src="kpop.jpg" alt="Chania" width="460" height="345">
+                <img src="img/kpop.jpg" alt="Chania" width="460" height="345">
             </div>
 
             <div class="item">
-                <img src="rnb.png" alt="Flower" width="460" height="345">
+                <img src="img/rnb.png" alt="Flower" width="460" height="345">
             </div>
 
             <div class="item">
-                <img src="rock.jpg" alt="Flower" width="460" height="345">
+                <img src="img/rock.jpg" alt="Flower" width="460" height="345">
             </div>
         </div>
 
