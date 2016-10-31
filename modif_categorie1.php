@@ -7,14 +7,15 @@
 
     <body>
 <?php
-if (!isset($_POST['modifier'])) {
+if (isset($_POST['modifier'])) {
 
     $categorie = $_POST['categorie'];
+    $titre = $_POST['titre'];
 
 
 
     $cat = mysqli_query($bdd, "UPDATE categories 
-    SET categorie = '$categorie'
+    SET categorie =  '$titre'
     WHERE id = '$categorie'
     ");
 

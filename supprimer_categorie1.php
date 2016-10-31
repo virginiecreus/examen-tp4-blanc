@@ -10,11 +10,11 @@
 if (isset($_POST['supprimer'])) {
 
 
-    $cat = $_POST['categorie'];
+    $categorie = $_POST['categorie'];
 
-    $vid = mysqli_query($bdd, "DELETE 
+    $cat = mysqli_query($bdd, "DELETE 
     FROM categories
-    WHERE id = '$cat'
+    WHERE id = '$categorie'
     ");
 
     if (mysqli_query($bdd, $cat)) {
