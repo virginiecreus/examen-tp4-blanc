@@ -20,8 +20,8 @@ if (isset($_POST['ajouter'])) {
 
 
 // On créé la requête
-    $vid = mysqli_query($bdd, "INSERT INTO videos (lien, titre, id_categorie)
-    VALUES ('$lien', '$titre', '$categorie')");
+    $vid = mysqli_query($bdd, "INSERT INTO categories (categorie)
+    VALUES ('$categorie')");
 
 // on envoie la requête
     if (mysqli_query($bdd, $vid)) {

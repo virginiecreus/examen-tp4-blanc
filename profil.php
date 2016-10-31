@@ -12,7 +12,6 @@ include('config.php');
 </head>
 
 <body>
-
 <?php include 'menu.php'; ?>
 <?php
 if($_SESSION['logged']){
@@ -23,6 +22,15 @@ else {
 echo 'Une erreure s\'est produite';
 }
 ?>
+
+<div class="container">
+    <div class="row">
+        <h2 class="page-header text-center font">Page Admin !</h2>
+    </div>
+</div>
+<?php include 'Add_admin.php'?>
+<?php include 'Add_video.php'?>
+<?php include 'Add_categorie.php'?>
 
 </body>
 </html>

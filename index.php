@@ -6,7 +6,7 @@ include('config.php');
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Bootstrap Example</title>
+    <title>TP-4 blanc</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">

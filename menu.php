@@ -18,7 +18,6 @@
         <ul class="nav navbar-nav">
             <li class="active"><a href="index.php">Accueil</a></li>
             <li><a href="profil.php">Profil</a></li>
-            <li><a href="Add_video.php">Ajouter une vidéo</a></li>
             <li><a href="video.php">Vidéos</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">

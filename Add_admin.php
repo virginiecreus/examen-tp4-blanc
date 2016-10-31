@@ -7,12 +7,11 @@
 </head>
 <body>
 
-<?php include 'menu.php'?>
+
 <div class="container">
     <div class="row">
-        <h2 class="page-header text-center font">Inscription !</h2>
-        <div class="col-md-5 col-sm-6 col-xs-12">
-        </div>
+        <h2 class="page-header text-center font">Ajouter un nouvel admin !</h2>
+
     </div>
 </div>
 

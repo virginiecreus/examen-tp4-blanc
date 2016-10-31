@@ -1,6 +1,11 @@
 <?php
 session_start();
 include('config.php');
+if (isset($_GET['value'])) {
+
+    $categorie = ucfirst($_GET['value']);
+
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,7 +27,7 @@ else {
 }
 ?>
 
-
+<?php include 'tri_categorie.php'?>
 <?php
 // lancement de la requete
 $requete = "SELECT * FROM `videos`";
@@ -50,6 +55,8 @@ while ($row = mysqli_fetch_array($donnees))
 }
 
 ?>
+<?php include 'commentaire.php'?>
+<?php include 'Afficher_commentaire.php'?>
 
 </body>
 </html>
