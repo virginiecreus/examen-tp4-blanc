@@ -18,7 +18,7 @@
         <ul class="nav navbar-nav">
             <li class="active"><a href="index.php">Accueil</a></li>
             <li><a href="profil.php">Profil</a></li>
-            <li><a href="video.php">Vidéos</a></li>
+            <li><a href="tri_categorie.php">Vidéos</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="Inscription.php"><span class="glyphicon glyphicon-user"></span> Inscription</a></li>
