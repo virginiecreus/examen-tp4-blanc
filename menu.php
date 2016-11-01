@@ -20,6 +20,10 @@
             <li><a href="profil.php">Profil</a></li>
             <li><a href="tri_categorie.php">Vidéos</a></li>
         </ul>
+
+        <input type="text" name="search" placeholder="Recherche">
+        <input type="submit" name="submit" value="rechercher">
+
         <ul class="nav navbar-nav navbar-right">
             <li><a href="Inscription.php"><span class="glyphicon glyphicon-user"></span> Inscription</a></li>
             <li><a href="connection.php"><span class="glyphicon glyphicon-log-in"></span> Connexion/Déconnexion</a></li>

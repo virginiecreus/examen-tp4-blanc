@@ -12,8 +12,8 @@ date_default_timezone_set('UTC');
 
 define('NOM_DB' , 'examen_blanc');
 define('UTILISATEUR_DB' , 'root');
-define('MDP_DB' , '311286');
+define('MDP_DB' , '');
 
 
-$bdd = mysqli_connect("localhost", "root", "311286", "examen_blanc");
+$bdd = mysqli_connect("localhost", "root", "", "examen_blanc");
 ?>
