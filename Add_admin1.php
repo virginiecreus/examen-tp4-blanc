@@ -1,14 +1,3 @@
-
-
-<!--if($LOGGED){
-
-    echo $_SESSION['prenom'].' '.$_SESSION['nom'].' est connecté en tant que '.$_SESSION['role'].' .';
-}
-else {
-    echo " Vous n'avez pas les droits.";
-}
-?> -->
-
 <!DOCTYPE html>
 <html>
 <head>

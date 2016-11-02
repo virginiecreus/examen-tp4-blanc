@@ -1,6 +1,14 @@
 <?php
-session_start();
 include('config.php');
+session_start();
+if ($_SESSION['role'] === "admin") {
+    echo "Bienvenue";
+}
+else {
+    header('Location:index.php?error');
+}
+
+?>
 ?>
 <!DOCTYPE html>
 <html>
